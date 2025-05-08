@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maldives Tour Package - IVACATIONS</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../../../img/logo.png" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../../destinations.html">Destinations</a></li>
+        <li><a href="../../../services.html">Services</a></li>
+        <li><a href="../../../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="package-deal" class="content-section">
+      <h2>Philippines to Maldives Adventure Package</h2>
+      <p class="intro">
+        Escape to the tropical paradise of the Maldives. With crystal-clear waters, white sandy beaches, and luxurious overwater villas, this destination promises a dream vacation.
+      </p>
+      <div class="package-container">
+        
+        <div class="package-image slider">
+          <img src="../../../img/over.png" alt="Overwater Villas in the Maldives" class="slide" />
+          <img src="../../../img/sunset.png" alt="Maldives Beach Sunset" class="slide" />
+          <img src="../../../img/snorkeling.png" alt="Snorkeling in the Maldives" class="slide" />
+        </div>
+
+        <div class="package-details">
+          <h3>What's Included:</h3>
+          <ul>
+            <li><strong>Flight Booking:</strong> Round-trip airfare from Manila to Malé.</li>
+            <li><strong>Hotel Accommodation:</strong> 7 nights in 5-star overwater villas or beachfront resorts.</li>
+            <li><strong>Tours:</strong> Snorkeling, diving excursions, and a sunset dolphin cruise.</li>
+            <li><strong>Transportation:</strong> Speedboat or seaplane transfers to your resort.</li>
+            <li><strong>Visa Assistance:</strong> Hassle-free visa processing for your trip to the Maldives.</li>
+            <li><strong>Travel Insurance:</strong> Comprehensive travel insurance for peace of mind.</li>
+            <li><strong>Dining Experience:</strong> Gourmet dining with fresh seafood and international cuisines.</li>
+          </ul>
+          <a href="../../../contact.html" class="btn">Book Your Maldives Adventure</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showNextSlide() {
+      slides[currentIndex].style.display = "none"; 
+      currentIndex = (currentIndex + 1) % slides.length; 
+      slides[currentIndex].style.display = "block"; 
+    }
+
+    slides.forEach((slide, index) => {
+      slide.style.display = index === 0 ? "block" : "none"; 
+    });
+
+    setInterval(showNextSlide, 3000); 
+  </script>
+</body>
+
+</html>

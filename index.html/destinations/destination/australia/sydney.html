@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydney Tour Package - IVACATIONS</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../../../img/logo.png" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../../destinations.html">Destinations</a></li>
+        <li><a href="../../../services.html">Services</a></li>
+        <li><a href="../../../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="package-deal" class="content-section">
+      <h2>Philippines to Sydney Adventure Package</h2>
+      <p class="intro">
+        Experience the best of Sydney, Australia’s vibrant city with stunning views, iconic landmarks, and world-class beaches. From the Sydney Opera House to Bondi Beach, this package offers it all.
+      </p>
+      <div class="package-container">
+        
+        <div class="package-image slider">
+          <img src="../../../img/opera.png" alt="Sydney Opera House" class="slide" />
+          <img src="../../../img/bridge.png" alt="Sydney Harbour Bridge" class="slide" />
+          <img src="../../../img/bondi.png" alt="Bondi Beach" class="slide" />
+        </div>
+
+        <div class="package-details">
+          <h3>What's Included:</h3>
+          <ul>
+            <li><strong>Flight Booking:</strong> Round-trip airfare from Manila to Sydney.</li>
+            <li><strong>Hotel Accommodation:</strong> 7 nights in 4-star hotels in Sydney's city center.</li>
+            <li><strong>Tours:</strong> Guided tours of the Sydney Opera House, Harbour Bridge climb, and Bondi Beach.</li>
+            <li><strong>Transportation:</strong> Private airport transfers and public transport passes for seamless travel.</li>
+            <li><strong>Visa Assistance:</strong> Hassle-free visa processing for your trip to Australia.</li>
+            <li><strong>Travel Insurance:</strong> Comprehensive travel insurance for peace of mind.</li>
+            <li><strong>Dining Experience:</strong> Australian cuisine, including seafood, gourmet dining, and local coffee culture.</li>
+          </ul>
+          <a href="../../../contact.html" class="btn">Book Your Sydney Adventure</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showNextSlide() {
+      slides[currentIndex].style.display = "none"; 
+      currentIndex = (currentIndex + 1) % slides.length; 
+      slides[currentIndex].style.display = "block"; 
+    }
+
+    slides.forEach((slide, index) => {
+      slide.style.display = index === 0 ? "block" : "none"; 
+    });
+
+    setInterval(showNextSlide, 3000); 
+  </script>
+</body>
+
+</html>

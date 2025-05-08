@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schengen Visa Requirements - IVACATIONS</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../../img/logo.png" alt="IVACATIONS Logo" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../destinations.html">Destinations</a></li>
+        <li><a href="../../services.html">Services</a></li>
+        <li><a href="../../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="schengen-visa" class="content-section">
+      <h2>Schengen Visa Requirements</h2>
+      <p class="intro-text">
+        Below is a detailed checklist of documents required for a Schengen visa application. Please ensure all documents are complete before submission:
+      </p>
+
+      <div class="requirements">
+        <h3>Required Documents</h3>
+        <ul class="checklist">
+          <li>
+            <input type="checkbox" id="long-envelope" disabled>
+            <label for="long-envelope">
+              Long Brown Envelope (Applicant's surname, name, contact number, and email address written in bold letters on the upper left corner using a marker)
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="visa-application" disabled>
+            <label for="visa-application">
+              Signed Schengen Visa Application Form with:
+              <ul>
+                <li>Photo (35mm x 45mm, passport-size, white background, with the present, same image and likeness)</li>
+              </ul>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="cover-letter" disabled>
+            <label for="cover-letter">
+              Cover Letter (must include the following details):
+              <ul>
+                <li>Travel dates</li>
+                <li>Purpose of travel</li>
+                <li>Names of companions traveling with</li>
+                <li>Day-to-day itinerary</li>
+              </ul>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="proof-financial" disabled>
+            <label for="proof-financial">
+              Proof of Personal Economic Means:
+              <ul>
+                <li>Bank Certificate</li>
+                <li>Bank Books</li>
+                <li>Statement of Account (including the movements of the account in at least the last 6 months)</li>
+                <li>Employment Certificate, Authorization for Leave of Absence, Income Tax Return (ITR) duly validated by BIR</li>
+                <li>For Self-Employed: Business Permit, SEC, DTI, Company Income Tax Return (ITR) duly validated by BIR, and Business Financial Statements</li>
+              </ul>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="travel-health" disabled>
+            <label for="travel-health">
+              Travel Health Insurance:
+              <ul>
+                <li>Minimum coverage of 30,000 Euros</li>
+                <li>Must be recognized in all Schengen States</li>
+                <li>Valid for the entire duration of the intended stay</li>
+              </ul>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="proof-accommodation" disabled>
+            <label for="proof-accommodation">
+              Proof of Accommodation:
+              <ul>
+                <li>Hotel Reservations (for the entire stay in the Schengen area)</li>
+                <li>Invitation Letter issued by the Spanish Police, or an invitation letter including the photocopy of the sponsor's passport and/or D.N.I., or residence card and registration certificate ("empadronamiento")</li>
+              </ul>
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="valid-passport" disabled>
+            <label for="valid-passport">
+              Valid Passport (with 3 months' validity from the end of the intended stay, must contain two empty pages)
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

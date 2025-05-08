@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Africa - IVACATIONS</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../../img/logo.png" alt="IVACATIONS Logo" />
+            <h1>IVACATIONS TRAVEL AGENCY</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="package-deal" class="content-section">
+            <h2>Explore Africa Travel Packages</h2>
+            <p>Embark on an unforgettable journey to Africa. From the majestic pyramids of Egypt to the wildlife safaris of Kenya, Africa offers a wealth of extraordinary experiences. Click on each country to learn more!</p>
+            <div class="region">
+                <h3>Top Destinations in Africa</h3>
+                <div class="region-cards">
+                    <div class="destination-card">
+                        <a href="destination/africa/egypt.html">Egypt</a>
+                    </div>
+                    <div class="destination-card">
+                        <a href="destination/africa/kenya.html">Kenya</a>
+                    </div>
+                    <div class="destination-card">
+                        <a href="destination/africa/tanzania.html">Tanzania</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

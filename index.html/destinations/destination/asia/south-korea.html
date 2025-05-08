@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korea Tour Package - IVACATIONS</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../../../img/logo.png" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../../destinations.html">Destinations</a></li>
+        <li><a href="../../../services.html">Services</a></li>
+        <li><a href="../../../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="package-deal" class="content-section">
+      <h2>Philippines to Korea Adventure Package</h2>
+      <p class="intro">
+        Immerse yourself in the vibrant culture and history of Korea with our exclusive package. From ancient palaces to picturesque natural landscapes, Korea is home to some of the most iconic tourist attractions in Asia. This tour offers a perfect balance of tradition, beauty, and modernity.
+      </p>
+      <div class="package-container">
+        
+        <div class="package-image slider">
+          <figure>
+            <img src="../../../img/gyeong.png" alt="Gyeongbokgung Palace" class="slide" />
+            <figcaption>Gyeongbokgung Palace - Step into the grandeur of Korea's royal history.</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../img/nami.png" alt="Nami Island" class="slide" />
+            <figcaption>Nami Island - A romantic retreat known for its tree-lined pathways.</figcaption>
+          </figure>
+          <figure>
+            <img src="../../../img/seor.png" alt="Seoraksan National Park" class="slide" />
+            <figcaption>Seoraksan National Park - Marvel at Korea's stunning mountain landscapes.</figcaption>
+          </figure>
+        </div>
+
+        <div class="package-details">
+          <h3>What's Included:</h3>
+          <ul>
+            <li><strong>Flight Booking:</strong> Round-trip airfare from Manila to Seoul.</li>
+            <li><strong>Hotel Accommodation:</strong> 5 nights at a 4-star hotel in Seoul or nearby scenic locations.</li>
+            <li><strong>Tours:</strong> Guided tours to Gyeongbokgung Palace, Nami Island, and Seoraksan National Park.</li>
+            <li><strong>Transportation:</strong> Private airport transfers and comfortable tour buses.</li>
+            <li><strong>Visa Assistance:</strong> Hassle-free Korea visa processing for your trip.</li>
+            <li><strong>Travel Insurance:</strong> Comprehensive travel insurance for peace of mind.</li>
+            <li><strong>Food Experience:</strong> Traditional Korean meals, including bibimbap and Korean BBQ tastings.</li>
+          </ul>
+          <a href="../../../contact.html" class="btn">Book Your Korea Adventure</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showNextSlide() {
+      slides[currentIndex].style.display = "none"; 
+      currentIndex = (currentIndex + 1) % slides.length; 
+      slides[currentIndex].style.display = "block";
+    }
+
+    slides.forEach((slide, index) => {
+      slide.style.display = index === 0 ? "block" : "none"; 
+    });
+
+    setInterval(showNextSlide, 3000); 
+  </script>
+</body>
+
+</html>

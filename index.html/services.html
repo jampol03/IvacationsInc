@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVACATIONS - Your Travel Partner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="IVACATIONS Logo" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="content-section">
+      <h2>Our Services</h2>
+      <p>Explore the wide range of services we offer to make your travel experience seamless and memorable.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://static.vecteezy.com/system/resources/previews/047/589/535/non_2x/start-up-visa-logo-sign-outline-vector.jpg" alt="Visa Processing" />
+          </div>
+          <h3>Visa Processing</h3>
+          <p>Hassle-free visa assistance for your international travels.</p>
+          <a href="services/visa-processing.html" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://th.bing.com/th/id/R.bca7a270b5f4be57fb3a5e2a5b164c28?rik=rK%2fOOgOdZY42nw&riu=http%3a%2f%2fwww.actualsoftsolutions.com%2fwp-content%2fuploads%2f2014%2f07%2ftravel-package.jpg&ehk=u6etNp1W0uaZ%2fQAfhepbrW3ZrPwVP382ycwiu0Ba4Bk%3d&risl=&pid=ImgRaw&r=0" alt="Custom Tour Packages" />
+          </div>
+          <h3>Custom Tour Packages</h3>
+          <p>Tailored travel packages to suit your preferences.</p>
+          <a href="services/custom-tour-packages.html" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://www.pngkey.com/png/detail/208-2080991_53ffc577a584c663122b7d3b-travel-insurance-icon-travel-insurance-png-logo.png" alt="Travel Insurance" />
+          </div>
+          <h3>Travel Insurance</h3>
+          <p>Comprehensive coverage for a worry-free journey.</p>
+          <a href="services/travel-insurance.html" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="ph/ph.png" alt="Philippine Tours" />
+          </div>
+          <h3>Philippine Tours</h3>
+          <p>Experience the beauty of the Philippines with expert-guided tours.</p>
+          <a href="services/philippines-tour.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

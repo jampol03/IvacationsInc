@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Tour Packages - IVACATIONS</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../about.html"  />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../destinations.html">Destinations</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="custom-tour-packages" class="content-section">
+      <h2>Custom Tour Packages</h2>
+      <p>
+        Plan your dream vacation with our custom tour packages. Fill out the form below to let us know your preferences, and we’ll create a personalized itinerary just for you!
+      </p>
+
+      
+      <div class="google-form">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdYXvk4N6BhTVLTil8rh7SHJXh3b-3M1FNzgAeV3H7ri8md7g/viewform?usp=header"
+          width="100%"
+          height="800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          allowfullscreen
+        >
+          Loading…
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

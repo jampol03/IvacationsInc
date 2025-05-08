@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVACATIONS - Destinations</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/logo.png" alt="IVACATIONS Logo" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../destinations.html">Destinations</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="destinations" class="content-section">
+      <h2>Explore Destinations by Compass</h2>
+      <p>Discover our exclusive travel packages by region. Click a country to explore its unique experiences or book directly!</p>
+
+      <div class="region">
+        <h3 class="region-title">Southeast Asia</h3>
+        <div class="region-cards">
+          <div class="destination-card">
+            <a href="destination/asia/thailand.html" class="destination-link">Thailand</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20Thailand" class="book-now-btn">Book Now</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/asia/vietnam.html" class="destination-link">Vietnam</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20Vietnam" class="book-now-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="region">
+        <h3 class="region-title">East Asia</h3>
+        <div class="region-cards">
+          <div class="destination-card">
+            <a href="destination/asia/china.html" class="destination-link">China</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20China" class="book-now-btn">Book Now</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/asia/japan.html" class="destination-link">Japan</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20Japan" class="book-now-btn">Book Now</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/asia/south-korea.html" class="destination-link">South Korea</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20South%20Korea" class="book-now-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="region">
+        <h3 class="region-title">South Asia</h3>
+        <div class="region-cards">
+          <div class="destination-card">
+            <a href="destination/asia/india.html" class="destination-link">India</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20India" class="book-now-btn">Book Now</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/asia/maldives.html" class="destination-link">Maldives</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20Maldives" class="book-now-btn">Book Now</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/asia/nepal.html" class="destination-link">Nepal</a>
+            <a href="../contact.html?subject=Booking%20Inquiry:%20Nepal" class="book-now-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Australia - IVACATIONS</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../../../img/logo.png" alt="IVACATIONS Logo" />
+      <h1>IVACATIONS TRAVEL AGENCY</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../destinations.html">Destinations</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="package-deal" class="content-section">
+      <h2>Explore Australia Travel Packages</h2>
+      <p>Discover the wonders of Australia with our exclusive travel packages. From the iconic Sydney Opera House to the Great Barrier Reef, Australia offers incredible experiences for every traveler. Click on each region to explore more!</p>
+      <div class="region">
+        <h3>Top Destinations in Australia</h3>
+        <div class="region-cards">
+          <div class="destination-card">
+            <a href="destination/australia/sydney.html">Sydney</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/australia/melbourne.html">Melbourne</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/australia/great-barrier-reef.html">Great Barrier Reef</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/australia/uluru.html">Uluru (Ayers Rock)</a>
+          </div>
+          <div class="destination-card">
+            <a href="destination/australia/tasmania.html">Tasmania</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IVACATIONS Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
